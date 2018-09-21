@@ -1,12 +1,11 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-int main()
-{
-	char s[30];
-	scanf("%s", s);
-	if(s[0] == EOF)
-	printf("Hello, nameless!\n");
+int main() 
+{ 
+	char s[30]; 
+	if (scanf("%s", s)!=EOF) 
+		printf("Hello, %s!", s); 
 	else
-	printf("Hello, %s!\n", s);
-	return 0;
+		printf("Hello, nameless!"); 
+	return 0; 
 }
