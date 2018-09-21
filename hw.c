@@ -4,7 +4,7 @@ int main()
 {
 	char s[30];
 	scanf("%s", s);
-	if(s[0] == '\0')
+	if(s[0] == EOF)
 	printf("Hello, nameless!\n");
 	else
 	printf("Hello, %s!\n", s);
